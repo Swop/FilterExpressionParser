@@ -123,7 +123,7 @@ class QueryExpressionBuilder
             case ($node instanceof IdentificationVariableNode):
 
                 /** @var IdentificationVariableNode $node */
-                return $context->getAlias() . $node->getValue();
+                return $context->getAlias(). '.' . $node->getValue();
             case ($node instanceof LiteralNode):
                 /** @var LiteralNode $node */
                 $literal = $node->getValue();
