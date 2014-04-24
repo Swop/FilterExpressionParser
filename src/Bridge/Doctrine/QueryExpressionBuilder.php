@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Swop\FilterExpressionParser;
+namespace Swop\FilterExpressionParser\Bridge\Doctrine;
 
 use Swop\FilterExpressionParser\Node\BetweenExpressionNode;
 use Swop\FilterExpressionParser\Node\ComparisonExpressionNode;
@@ -22,8 +22,8 @@ use Swop\FilterExpressionParser\Node\InExpressionNode;
 use Swop\FilterExpressionParser\Node\LikeExpressionNode;
 use Swop\FilterExpressionParser\Node\LiteralNode;
 use Swop\FilterExpressionParser\Node\Node;
-use Doctrine\ORM\Query\Expr;
 use Swop\FilterExpressionParser\Node\NullComparisonExpressionNode;
+use Doctrine\ORM\Query\Expr;
 
 class QueryExpressionBuilder
 {

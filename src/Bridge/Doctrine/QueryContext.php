@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Swop\FilterExpressionParser;
+namespace Swop\FilterExpressionParser\Bridge\Doctrine;
 
 class QueryContext
 {
