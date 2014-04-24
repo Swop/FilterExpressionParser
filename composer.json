@@ -1,0 +1,28 @@
+{
+    "name": "swop/filter-expression-parser",
+    "description": "Filter-like expression parser & lexer implemented in PHP",
+    "keywords": ["lexer", "parser", "expression", "filter"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvain Mauduit",
+            "email": "swop@swop.io"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3",
+        "doctrine/lexer": "~1.0",
+        "doctrine/orm": "~2.2,>=2.2.3"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": { "Swop\\FilterExpressionParser\\": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
