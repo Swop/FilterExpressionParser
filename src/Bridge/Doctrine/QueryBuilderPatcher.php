@@ -28,7 +28,10 @@ class QueryBuilderPatcher
         $queryExpression = $this->queryExpressionBuilder->buildQueryExpression($filterAST, $qc);
 
         $qb->andWhere($queryExpression);
-        $qb->setParameters($qc->getParameters());
+
+        foreach ($qc->getParameters() as $key => $value) {
+            $qb->setParameter($key, $value);
+        }
 
         return $qb;
     }
